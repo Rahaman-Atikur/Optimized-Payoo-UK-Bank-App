@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-16" src="./assets/Group.png" alt="" />
+                <div>
+                    <h1 class="text-3xl font-bold">
+                        $ <span id="existing-amount">4500</span>
+                    </h1>
+                    <p class="border rounded p-1">Available Balance</p>
+                </div>
+                <button class="btn">logout</button>
+            </nav>
+            <section>
+                <h1 class="text-2xl font-bold mb-2 mt-10">Welcome to Payooo!</h1>
+                <p>
+                    Enjoy the UK's most reliable Banking within shortest time and
+                    securely. Because We care about your Money.
+                </p>
+                <div class="cards cursor-pointer grid grid-cols-3 mt-14 gap-4 p-3">
+                    <div id="add-money-likebtn" class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/purse1.png" alt="" />
+                        <h3>Add money</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/send1.png" alt="" />
+                        <h3>Pay Bill</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="" />
+                        <h3>Foreign Money</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
+                        <h3>Bank Transfer</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/money1.png" alt="" />
+                        <h3>Display Balance</h3>
+                    </div>
+                    <div id="Cash-withdraw-likebtn" class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/purse1.png" alt="" />
+                        <h3>Cash Withdraw</h3>
+                    </div>
+                </div>
+                <!-- Add Money Section -->
+                <section id="add-money">
+                    <h2 class="text-3xl font-extrabold text-center">Add Money</h2>
+
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="text-center lg:text-left">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                    <legend>Select Bank</legend>
+                                    <select class="select">
+                                        <option disabled selected>Select Your Bank</option>
+                                        <option>NatWest</option>
+                                        <option>LLoyds Bank</option>
+                                        <option>Barclays</option>
+                                    </select>
+                                    <fieldset class="fieldset">
+                                        <label class="">Account Number</label>
+                                        <input id="input-account-number" value="01234567891" type="number" class="input"
+                                            placeholder="Account Number" required />
+
+                                        <label class="label">Pin</label>
+                                        <input id="input-pin-number" value="1234" type="text" class="input"
+                                            placeholder="Pin" required />
+
+                                        <label class="label">Amount Number</label>
+                                        <input id="amount" type="text" class="input" placeholder=" Type Amount Number"
+                                            required />
+
+                                        <div><a class="link link-hover">Forgot password?</a></div>
+
+                                        <button id="add-money-btn" class="btn rounded">
+                                            Add Money
+                                        </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Money Withdraw Section -->
+                <section id="cashout">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <h2 class="text-3xl font-bold">Withdraw Cash</h2>
+                            <legend>Select Bank</legend>
+                            <select class="select">
+                                <option disabled selected>Select Your Bank</option>
+                                <option>NatWest</option>
+                                <option>LLoyds Bank</option>
+                                <option>Barclays</option>
+                            </select>
+                            <fieldset class="fieldset">
+                                <label class="">Account Number</label>
+                                <input id="input-account-number" value="01234567891" type="number" class="input"
+                                    placeholder="Account Number" required />
+
+                                <label class="label">Pin</label>
+                                <input id="input-pin-cashout" value="1234" type="text" class="input" placeholder="Pin"
+                                    required />
+
+                                <label class="label">Amount Number</label>
+                                <input id="amount-cashout" type="text" class="input" placeholder=" Type Amount Number"
+                                    required />
+
+                                <div><a class="link link-hover">Forgot password?</a></div>
+
+                                <button id="cash-withdraw-btn" class="btn rounded">
+                                    Cash Withdraw
+                                </button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </header>
+    </section>
+    <script src="./script/addmoney.js"></script>
+    <script src="./script/toggle.js"></script>
+    <script src="./script/cashout.js"></script>
+</body>
+
+</html>
