@@ -20,7 +20,7 @@
           <img class="w-16" src="./assets/Group.png" alt="" />
           <div>
             <h1 class="text-3xl font-bold">
-              $ <span id="existing-amount">4500</span>
+              £ <span id="existing-amount">4500</span>
             </h1>
             <p class="border rounded p-1">Available Balance</p>
           </div>
@@ -65,7 +65,7 @@
             </div>
           </div>
           <!-- Add Money Section -->
-          <section id="add-money">
+          <section id="add-money ">
             <h2 class="text-3xl font-extrabold text-center">Add Money</h2>
 
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -125,9 +125,9 @@
 
           <!-- Money Withdraw Section -->
           <section id="cashout">
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card bg-sky-300 w-full max-w-sm shrink-0 shadow-2xl ml-10">
               <div class="card-body">
-                <h2 class="text-3xl font-bold">Withdraw Cash</h2>
+                <h2 class="text-3xl font-bold text-center">Withdraw Cash</h2>
                 <legend>Select Bank</legend>
                 <select class="select">
                   <option disabled selected>Select Your Bank</option>
@@ -138,7 +138,7 @@
                 <fieldset class="fieldset">
                   <label class="">Account Number</label>
                   <input
-                    id="input-account-number"
+                    id="input-account-number-cash"
                     value="01234567891"
                     type="number"
                     class="input"
@@ -167,7 +167,7 @@
 
                   <div><a class="link link-hover">Forgot password?</a></div>
 
-                  <button id="cash-withdraw-btn" class="btn rounded">
+                  <button id="cash-withdraw-btn" class="btn rounded ">
                     Cash Withdraw
                   </button>
                 </fieldset>
@@ -179,5 +179,6 @@
     </section>
     <script src="./scripts/addMoney.js"></script>
     <script src="./utilities/utilities.js"></script>
+    <script src="./scripts/withdraw.js"></script>
   </body>
 </html>

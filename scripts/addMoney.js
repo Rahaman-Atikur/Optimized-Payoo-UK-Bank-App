@@ -1,16 +1,16 @@
 document.getElementById("add-money-btn")
 .addEventListener("click",function(event){
     event.preventDefault();
-   const amount = getInputValueById("amount");
-
+   const newAmount = getInputValueById("amount");
+   console.log(newAmount);
    const pin = getInputValueById("input-pin-number");
-   const account = getElementById("input-account-number");
-   if(account.length===11){
+   const accountNumber = document.getElementById("input-account-number").value;
+   const existingAmount = getInnerTextById("existing-amount");
+   if(accountNumber.length===11){
     if(pin===1234){
-        //mainBalance update
-    }
-    else{
-        // something wrong
+        const sum = newAmount + existingAmount;
+        document.getElementById("existing-amount").innerText = sum;
     }
    }
+   
 })
