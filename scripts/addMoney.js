@@ -1,3 +1,4 @@
+
 document.getElementById("add-money-btn")
 .addEventListener("click",function(event){
     event.preventDefault();
@@ -10,6 +11,15 @@ document.getElementById("add-money-btn")
     if(pin===1234){
         const sum = newAmount + existingAmount;
         document.getElementById("existing-amount").innerText = sum;
+
+        // Transaction History 
+        const container = document.getElementById("transaction-container");
+        const p = document.createElement("p");
+        p.innerText=`
+        added ${newAmount} from ${accountNumber}
+        `;
+        container.appendChild(p);
+        
     }
    }
    

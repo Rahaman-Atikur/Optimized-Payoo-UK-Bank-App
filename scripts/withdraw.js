@@ -13,6 +13,20 @@ document.getElementById("cash-withdraw-btn")
             const available = availableAmount - withdrawAmount;
     
             document.getElementById("existing-amount").innerText=available;
+
+            // Transaction Amount 
+            const container = document.getElementById("transaction-container");
+            
+
+            const para = document.createElement("p");
+          
+            para.innerText=`
+            withdrawn ${withdrawAmount} from ${accNumber}
+            `;
+            
+            container.appendChild(para);
+
+
         }
     }
 

@@ -40,9 +40,9 @@
               <img class="w-8 mx-auto" src="./assets/purse1.png" alt="" />
               <h3>Add money</h3>
             </div>
-            <div class="box border p-4 text-center rounded-sm">
+            <div id="tra-his-btn" class="box border p-4 text-center rounded-sm">
               <img class="w-8 mx-auto" src="./assets/send1.png" alt="" />
-              <h3>Pay Bill</h3>
+              <h3>Transaction History</h3>
             </div>
             <div class="box border p-4 text-center rounded-sm">
               <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="" />
@@ -65,7 +65,7 @@
             </div>
           </div>
           <!-- Add Money Section -->
-          <section id="add-money ">
+          <section id="add-money">
             <h2 class="text-3xl font-extrabold text-center">Add Money</h2>
 
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -174,11 +174,21 @@
               </div>
             </div>
           </section>
+          <!-- Transaction History Section -->
+           <section id="transaction-history">
+            <h1 class="text-3xl font-bold text-center text-violet-500 p-3">Transaction History</h1>
+            <div id="transaction-container">
+              
+            </div>
+            
+
+           </section>
         </section>
       </header>
     </section>
     <script src="./scripts/addMoney.js"></script>
     <script src="./utilities/utilities.js"></script>
     <script src="./scripts/withdraw.js"></script>
+    <script src="./scripts/transactionHis.js"></script>
   </body>
 </html>

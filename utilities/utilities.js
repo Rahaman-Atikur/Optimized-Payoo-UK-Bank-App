@@ -15,3 +15,7 @@ function getPinById(){
     const convertedPin = parseInt(loginPin);
     return convertedPin;
 }
+
+function getToggleByIdAndStatus(id,status){
+    document.getElementById(id).style.display=status;
+}
